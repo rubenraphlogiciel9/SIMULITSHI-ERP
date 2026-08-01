@@ -1,0 +1,59 @@
+#wrapper {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 260px;
+    margin-left: 0;
+    transition: margin 0.25s ease-out;
+    background-color: #1e293b; /* Fond sombre élégant (Slate/Dark) */
+    color: #f8fafc; /* Texte principal en blanc/gris très clair */
+}
+
+/* Style des liens dans la sidebar */
+#sidebar-wrapper a,
+#sidebar-wrapper .nav-link {
+    color: #cbd5e1 !important; /* Gris clair bien lisible */
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Effet au survol du pointeur (Hover) */
+#sidebar-wrapper a:hover,
+#sidebar-wrapper .nav-link:hover {
+    color: #ffffff !important; /* Blanc pur au survol */
+    background-color: rgba(255, 255, 255, 0.1); /* Léger surbrillance */
+    border-radius: 6px;
+}
+
+/* Titres de catégories dans la sidebar */
+.sidebar-category {
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    color: #94a3b8 !important; /* Gris moyen pour distinguer les titres */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -260px;
+}
+
+#page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    background-color: #f8fafc;
+}
+
+.card-stat {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card-stat:hover {
+    transform: translateY(-3px);
+}
